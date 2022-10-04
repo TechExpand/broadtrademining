@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Broadtrademining - Isometric Investment Platform</title>
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/icofont.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/lightcase.css">
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="/css/nice-select.css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+  <!-- preloader start -->
+
+  <!-- preloader end -->
+
+    <!-- signin-area start -->
+   <!-- signin-area start -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bdr-radius">
+          <div class="signin-wrapper">
+            <div class="signin-wrapper-header text-center">
+              <div class="logo"><img src="/images/elements/logo-icon.png" alt="image"></div>
+              <h3 class="title">Login</h3>
+              <p>Welcome back, please sign in below</p>
+            </div>
+            <form action="/login" method="post" class="signin-form">
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
+              </div>
+              <div class="form-group">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="id-1" id="id-1" checked>
+                  <label for="id-1">Remember Password</label>
+                  <span class="checkbox"></span>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-hover">Log In</button>
+            </form>
+            <div class="signin-wrapper-footer">
+              <p class="bottom-text">Don’t have an account? <a href="#0" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal" aria-label="Close">Sign Up Now</a></p>
+              <div class="divider"><span>or</span></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- signin-area end -->
+    
+    <!-- signup-area start -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bdr-radius">
+          <div class="signin-wrapper">
+            <div class="signin-wrapper-header text-center">
+              <div class="logo"><img src="/images/elements/logo-icon.png" alt="image"></div>
+              <h3 class="title">Created Account</h3>
+              <p>please fill the form to create account</p>
+            </div>
+            <form action="/registration" method="post" class="signin-form">
+              <div class="form-group">
+                <label for="fullname">Fullname*</label>
+                <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Enter your Fullname" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
+              </div>
+              <div class="form-group">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="id-2" id="id-2" checked>
+                  <label for="id-2">I do not want to be kept up to date about relevant investment opportunities, features, and events</label>
+                  <span class="checkbox"></span>
+                </div>
+              </div>
+              <button type="submit" value="submit" class="btn btn-primary btn-hover">Sign Up</button>
+            </form>
+            <div class="signin-wrapper-footer">
+              <p class="bottom-text">Already have an account?<a href="#0" data-toggle="modal" data-target="#signInModal" data-dismiss="modal" aria-label="Close">Login</a></p>
+              <div class="divider"><span>or</span></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- signup-area end -->
+    <!-- signup-area end -->
+  <!--  header-section start  -->
+  <header class="header-section transparent--header header--fixed">
+    <div class="header-top">
+        <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 col-md-6">
+            <div class="header-top-left d-flex">
+                <div class="support-part">
+                    <a href="tel:+88016558888454"><i class="fa fa-headphones"></i>Support</a>
+                </div>
+                <div class="email-part">
+                    <a href="/cdn-cgi/l/email-protection#ef86818980af8d8a87808089c18c8082"><i class="fa fa-envelope"></i><span class="__cf_email__" data-cfemail="e0898e868fa08285888f8f86ce838f8d">[email&#160;protected]</span></a>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="header-top-right d-flex align-items-center justify-content-end">
+                    <div class="language-part">
+                    <i class="fa fa-globe"></i>
+<div class="select d-inline-block w-auto ml-xl-3" id="google_translate_element"></div>
+                    </div>
+                    <div class="header-cart-count">
+                    <a href="/dashboard">
+                      <i class="fa fa-tachometer"></i>
+                      <span>Dashboard</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+        <nav class="navbar navbar-expand-xl">
+            <a class="site-logo site-title" href="/"><img src="/images/logo2.png" alt="site-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="menu-toggle"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav main-menu ml-auto">
+                <li class="active menu_has_children"><a href="/">Home</a>
+             
+                </li>
+                <li><a href="/about">about</a></li>
+               
+                
+          
+                <li><a href="/contact">contact us</a></li>
+            </ul>
+              <div class="header-join-part">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signInModal">join us</button>
+              </div>
+            </div>
+        </nav>
+        </div>
+    </div><!-- header-bottom end -->
+  </header>
+  <!--  header-section end  -->
+
+  <!-- inner-page-banner-section start -->
+  <section class="inner-page-banner-section gradient-bg">
+    <div class="illustration-img"><img src="/images/inner-page-banner-illustrations/how-work.png" alt="image-illustration"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="inner-page-content-area">
+                    <h2 class="page-title">How It Works</h2>
+                    <nav aria-label="breadcrumb" class="page-header-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#0">Pages</a></li>
+                            <li class="breadcrumb-item">How It Works</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- inner-page-banner-section end -->
+
+  <!-- video-section start -->
+  <div class="video-section mt-minus pb-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="video-thumb-wrapper bg_img" data-background="/images/video-bg.jpg">
+            <div class="video-thumb-content text-center">
+              <a class="round-video-btn" href="https://www.youtube.com/embed/aFYlAzQHnY4" data-rel="lightcase:myCollection"><i class="fa fa-play"></i></a>
+              <h2 class="title">How to invest </h2>
+              <p>Risk-free secure investment anywhere, anytime</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- video-section end -->
+
+  <!-- how-work-section start -->
+  <section class="how-work-section pb-120">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-header text-center">
+            <span class="section-subtitle">How you can invest your</span>
+            <h2 class="section-title">Money More Smartly</h2>
+            <p>It’s a simple way to start invest.You don’t need a deep wallet to start Broadtrademining. Pick an amount you can afford, and build your Broadtrademining over time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-none-30">
+        <div class="col-lg-4 col-md-4 col-sm-6 mb-30">
+          <div class="how-work-item--two text-center" data-count="01">
+            <div class="icon">
+              <img src="/images/icons/how-work/4.png" alt="image">
+            </div>
+            <div class="content">
+              <h3 class="title">Sign up</h3>
+              <p>To start investing using the Broadtrademining Invest platform, you need to register. Registration is incredibly simple; it should take you no more than 5 min.</p>
+              <a href="#0" class="btn btn-primary btn-hover text-small">Sign up</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 mb-30">
+          <div class="how-work-item--two text-center" data-count="02">
+            <div class="icon">
+              <img src="/images/icons/how-work/5.png" alt="image">
+            </div>
+            <div class="content">
+              <h3 class="title">Invest</h3>
+              <p>After you have created your account, your identity has been verified & you have added funds, you can start searching for the invest</p>
+              <a href="#0" class="btn btn-primary btn-hover text-small">Invest now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 mb-30">
+          <div class="how-work-item--two text-center" data-count="03">
+            <div class="icon">
+              <img src="/images/icons/how-work/6.png" alt="image">
+            </div>
+            <div class="content">
+              <h3 class="title">Grow Your Income</h3>
+              <p>After you have created your account, your identity has been verified & you have added funds, you can start searching for the invest</p>
+              <a href="#0" class="btn btn-primary btn-hover text-small">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- how-work-section end -->
+
+  <!-- app-section start -->
+  <section class="app-section pt-120 pb-120">
+    <div class="shape"><img src="/images/elements/about.png" alt="image"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="app-item mb-30">
+                <img src="/images/icons/app-item-icon/1.png" alt="image">
+                <h6 class="caption">See all your money in one place</h6>
+              </div><!-- app-item end -->
+              <div class="app-item">
+                <img src="/images/icons/app-item-icon/2.png" alt="image">
+                <h6 class="caption">Invest your money more smartly</h6>
+              </div><!-- app-item end -->
+            </div>
+            <div class="col-md-6 mt-50">
+              <div class="app-item mb-30">
+                <img src="/images/icons/app-item-icon/3.png" alt="image">
+                <h6 class="caption">Keep track of your moneymore simply</h6>
+              </div><!-- app-item end -->
+              <div class="app-item">
+                <img src="/images/icons/app-item-icon/4.png" alt="image">
+                <h6 class="caption">Get a personalised budget,automatically</h6>
+              </div><!-- app-item end -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-lg-0 mt-5 pt-md-5">
+          <div class="app-content text-lg-left text-center">
+            <div class="section-header">
+              <span class="section-subtitle">Manage your money more easily</span>
+              <h2 class="section-title">OUR SMART APP</h2>
+              <p>Invest in stocks, ETFs, options, and cryptocurrencies, all commission-free, right from your phone or desktop.</p>
+            </div>
+            <p>Intuitively designed for newcomers and experts alike, Broadtrademining gives you a clear picture of your portfolio’s performance over time, so you can adjust your positions and learn by doing.Stay up to date on Your account balance, details and request withdrawals / make deposits.</p>
+            <div class="btn-area justify-content-lg-start justify-content-center">
+              <a href="#0" class="wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.5s"><img src="/images/buttons/google.png" alt="button"></a>
+              <a href="#0" class="wow zoomIn" data-wow-duration="0.7s" data-wow-delay="0.5s"><img src="/images/buttons/apple.png" alt="button"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- app-section end -->
+
+  <!-- footer-section start -->
+  <footer class="footer-section">
+    <div class="footer-top bg_img" data-background="/images/footer-bg-3.png">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="section-header text-white text-center">
+              <span class="section-subtitle">Subscribe to Broadtrademining</span>
+              <h2 class="section-title">To Get Exclusive Benefits</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="subscribe-wrapper style--two">
+              <form class="subscribe-form">
+                <input type="text" name="subs_name" id="subs_name" placeholder="Your Email Address">
+                <button type="submit" class="subs-btn">subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-widget">
+              <h3 class="widget-title">About Broadtrademining</h3>
+              <ul class="footer-menu-list">
+                <li><a href="/about">About us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/dashboard">Manage Your Account</a></li>
+              </ul>
+            </div>
+          </div><!-- footer-widget end -->
+        </div>
+ 
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p class="copy-right-text">Copyright © 2022.All Rights Reserved By <a href="/">Broadtrademining</a></p>
+          </div>
+          <div class="col-lg-6">
+            <div class="card-list text-right">
+              <a href="#0"><img src="/images/icons/card-options/americanexpress.png" alt="image"></a>
+              <a href="#0"><img src="/images/icons/card-options/maestro.png" alt="image"></a>
+              <a href="#0"><img src="/images/icons/card-options/visa.png" alt="image"></a>
+              <a href="#0"><img src="/images/icons/card-options/paypal.png" alt="image"></a>
+              <a href="#0"><img src="/images/icons/card-options/mastercard.png" alt="image"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-section end -->
+
+  <!-- scroll-to-top start -->
+  <div class="scroll-to-top">
+    <span class="scroll-icon">
+      <i class="fa fa-rocket"></i>
+    </span>
+  </div>
+  <!-- scroll-to-top end --> 
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/jquery.nice-select.js"></script>
+  <script src="/js/lightcase.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/jquery-ui.min.js"></script>
+  <script src="/js/wow.min.js"></script>
+  <script src="/js/jquery.waypoints.min.js"></script>
+  <script src="/js/jquery.countup.min.js"></script>
+  <script src="/js/jquery.paroller.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

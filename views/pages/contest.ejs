@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Broadtrademining - Isometric Investment Platform</title>
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/icofont.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/lightcase.css">
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="/css/nice-select.css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+  <!-- preloader start -->
+
+  <!-- preloader end -->
+
+    <!-- signin-area start -->
+   <!-- signin-area start -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bdr-radius">
+          <div class="signin-wrapper">
+            <div class="signin-wrapper-header text-center">
+              <div class="logo"><img src="/images/elements/logo-icon.png" alt="image"></div>
+              <h3 class="title">Login</h3>
+              <p>Welcome back, please sign in below</p>
+            </div>
+            <form action="/login" method="post" class="signin-form">
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
+              </div>
+              <div class="form-group">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="id-1" id="id-1" checked>
+                  <label for="id-1">Remember Password</label>
+                  <span class="checkbox"></span>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-hover">Log In</button>
+            </form>
+            <div class="signin-wrapper-footer">
+              <p class="bottom-text">Don’t have an account? <a href="#0" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal" aria-label="Close">Sign Up Now</a></p>
+              <div class="divider"><span>or</span></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- signin-area end -->
+    
+    <!-- signup-area start -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bdr-radius">
+          <div class="signin-wrapper">
+            <div class="signin-wrapper-header text-center">
+              <div class="logo"><img src="/images/elements/logo-icon.png" alt="image"></div>
+              <h3 class="title">Created Account</h3>
+              <p>please fill the form to create account</p>
+            </div>
+            <form action="/registration" method="post" class="signin-form">
+              <div class="form-group">
+                <label for="fullname">Fullname*</label>
+                <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Enter your Fullname" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
+              </div>
+              <div class="form-group">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="id-2" id="id-2" checked>
+                  <label for="id-2">I do not want to be kept up to date about relevant investment opportunities, features, and events</label>
+                  <span class="checkbox"></span>
+                </div>
+              </div>
+              <button type="submit" value="submit" class="btn btn-primary btn-hover">Sign Up</button>
+            </form>
+            <div class="signin-wrapper-footer">
+              <p class="bottom-text">Already have an account?<a href="#0" data-toggle="modal" data-target="#signInModal" data-dismiss="modal" aria-label="Close">Login</a></p>
+              <div class="divider"><span>or</span></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- signup-area end -->
+    <!-- signup-area end -->
+
+  <!--  header-section start  -->
+  <header class="header-section transparent--header header--fixed">
+    <div class="header-top">
+        <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 col-md-6">
+            <div class="header-top-left d-flex">
+                <div class="support-part">
+                    <a href="tel:+88016558888454"><i class="fa fa-headphones"></i>Support</a>
+                </div>
+                <div class="email-part">
+                    <a href="/cdn-cgi/l/email-protection#20494e464f604245484f4f460e434f4d"><i class="fa fa-envelope"></i><span class="__cf_email__" data-cfemail="224b4c444d6240474a4d4d440c414d4f">[email&#160;protected]</span></a>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="header-top-right d-flex align-items-center justify-content-end">
+                    <div class="language-part">
+                    <i class="fa fa-globe"></i>
+<div class="select d-inline-block w-auto ml-xl-3" id="google_translate_element"></div>
+                    </div>
+                    <div class="header-cart-count">
+                    <a href="/dashboard">
+                      <i class="fa fa-tachometer"></i>
+                      <span>Dashboard</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+        <nav class="navbar navbar-expand-xl">
+            <a class="site-logo site-title" href="/"><img src="/images/logo2.png" alt="site-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="menu-toggle"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav main-menu ml-auto">
+                <li class="active menu_has_children"><a href="/">Home</a>
+             
+                </li>
+                <li><a href="/about">about</a></li>
+               
+                
+          
+                <li><a href="/contact">contact us</a></li>
+            </ul>
+              <div class="header-join-part">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signInModal">join us</button>
+              </div>
+            </div>
+        </nav>
+        </div>
+    </div><!-- header-bottom end -->
+  </header>
+  <!--  header-section end  -->
+
+  <!-- inner-page-banner-section start -->
+  <section class="inner-page-banner-section gradient-bg">
+    <div class="illustration-img"><img src="/images/inner-page-banner-illustrations/contest.png" alt="image-illustration"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="inner-page-content-area">
+                    <h2 class="page-title">Contests</h2>
+                    <nav aria-label="breadcrumb" class="page-header-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#0">Pages</a></li>
+                            <li class="breadcrumb-item">Contests</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- inner-page-banner-section end -->
+
+  <!-- contest-section start -->
+  <section class="contest-section mt-minus pb-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="contest-single">
+            <div class="thumb"><img src="/images/elements/contest.png" alt="image"></div>
+            <div class="content">
+              <h2 class="title">CHAMPION</h2>
+              <h3 class="contest-name">MT4 CONTEST</h3>
+              <p class="text">Next round starts:</p>
+              <span class="contest-date">7 april 2019 </span>
+              <a href="#0" class="btn btn-primary btn-hover text-small"> Join next round!</a>
+              <p class="bottom-text"><span>458 Investors</span> have already registered</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="contest-details-wrapper">
+            <div class="single-item w-2">
+              <h3 class="title">Duration</h3>
+              <span class="time">4 weeks</span>
+            </div>
+            <div class="single-item">
+              <h3 class="title">Withdrawable Prizes</h3>
+              <ul class="prize-list">
+                <li>
+                  <p>1<sup>ST</sup> ....  <span><sup>$</sup>5,000</span></p>
+                  <p>2<sup>ND</sup> ....  <span><sup>$</sup>3,000</span></p>
+                </li>
+                <li>
+                  <p>3<sup>RD</sup> ....  <span><sup>$</sup>2,000</span></p>
+                  <p>4<sup>TH</sup> ....  <span><sup>$</sup>1,000</span></p>
+                </li>
+              </ul>
+            </div>
+            <div class="single-item w-2">
+              <h3 class="title">Platform</h3>
+              <span class="content-name">MT4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contest-section end -->
+
+  <!-- section start -->
+  <section class="position-relative pt-120 pb-120 section-md-bg">
+    <div class="common-shape d-lg-block d-none"><img src="/images/elements/common-shape.png" alt="image"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="section-header text-lg-left text-center">
+            <span class="section-subtitle">Take a Look Current</span>
+            <h2 class="section-title">Round Leaders</h2>
+            <p>The participant with the highest balance at the end of round wins the main prize</p>
+          </div><!-- section-header end -->
+          <div class="leader-table-area table-responsive-lg">
+            <table class="leader-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Contestant</th>
+                  <th>Country</th>
+                  <th>Gain</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td>
+                    <div class="leader-single">
+                      <div class="thumb"><img src="/images/withdraw/t-1.png" alt="image"></div>
+                      <span class="name">Shahrijal </span>
+                    </div>
+                  </td>
+                  <td>Indonesia</td>
+                  <td><span class="gain-percentage">+20 472.72 %</span></td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>
+                    <div class="leader-single">
+                      <div class="thumb"><img src="/images/withdraw/t-2.png" alt="image"></div>
+                      <span class="name">Nicolas</span>
+                    </div>
+                  </td>
+                  <td>Malaysia</td>
+                  <td><span class="gain-percentage">+7 613.43 %</span></td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>
+                    <div class="leader-single">
+                      <div class="thumb"><img src="/images/withdraw/t-3.png" alt="image"></div>
+                      <span class="name">Clarence</span>
+                    </div>
+                  </td>
+                  <td>Singapore</td>
+                  <td><span class="gain-percentage">+5 278.06 %</span></td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td>
+                    <div class="leader-single">
+                      <div class="thumb"><img src="/images/withdraw/t-4.png" alt="image"></div>
+                      <span class="name">Vernon</span>
+                    </div>
+                  </td>
+                  <td>Ironlady</td>
+                  <td><span class="gain-percentage">+3 865.01 %</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="text-center mt-50">
+            <a href="#0" class="btn btn-primary btn-hover text-small">browse more</a>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-lg-0 mt-md-5 pt-md-5 mt-5">
+          <div class="section-header text-lg-left text-center">
+            <span class="section-subtitle">latest Contest</span>
+            <h2 class="section-title">Winners</h2>
+            <p>Investors from all over the World, to gain the ultimate recognition as World Top Investor.</p>
+          </div><!-- section-header end -->
+          <div class="contest-winner-slider owl-carousel">
+            <div class="contest-winner-item text-center">
+              <div class="thumb">
+                <img src="/images/contest-winner/1.png" alt="image">
+                <span class="icon"><img src="/images/icons/contest-winner/trophy.svg" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+            <div class="contest-winner-item text-center">
+              <div class="thumb">
+                <img src="/images/contest-winner/1.png" alt="image">
+                <span class="icon"><img src="/images/icons/contest-winner/trophy.svg" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+            <div class="contest-winner-item text-center">
+              <div class="thumb">
+                <img src="/images/contest-winner/1.png" alt="image">
+                <span class="icon"><img src="/images/icons/contest-winner/trophy.svg" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+            <div class="contest-winner-item text-center">
+              <div class="thumb">
+                <img src="/images/contest-winner/1.png" alt="image">
+                <span class="icon"><img src="/images/icons/contest-winner/trophy.svg" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+            <div class="contest-winner-item text-center">
+              <div class="thumb">
+                <img src="/images/contest-winner/1.png" alt="image">
+                <span class="icon"><img src="/images/icons/contest-winner/trophy.svg" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section end -->
+
+  <!-- ready-section start -->
+  <section class="ready-section pt-120 pb-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ready-content-wrapper">
+            <h2 class="title">Ready to get started?</h2>
+            <p>Contact us today and let us help you achieve your financial goals.</p>
+            <a href="#0" class="btn btn-secondary">open an account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ready-section end -->
+
+  <!-- footer-section start -->
+  <footer class="footer-section">
+    <div class="footer-top bg_img" data-background="/images/footer-bg-3.png">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="section-header text-white text-center">
+              <span class="section-subtitle">Subscribe to Broadtrademining</span>
+              <h2 class="section-title">To Get Exclusive Benefits</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="subscribe-wrapper style--two">
+              <form class="subscribe-form">
+                <input type="text" name="subs_name" id="subs_name" placeholder="Your Email Address">
+                <button type="submit" class="subs-btn">subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-widget">
+              <h3 class="widget-title">About Broadtrademining</h3>
+              <ul class="footer-menu-list">
+                <li><a href="/about">About us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/dashboard">Manage Your Account</a></li>
+              </ul>
+            </div>
+          </div><!-- footer-widget end -->
+        </div>
+ 
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p class="copy-right-text">Copyright © 2022.All Rights Reserved By <a href="/">Broadtrademining</a></p>
+          </div>
+          <div class="col-lg-6">
+            <div class="card-list text-right">
+              <a href="#0"><img src="/images/icons/card-options/americanexpress.png" alt="image"></a>
+              <a href="#0"><img src="/images/icons/card-options/maestro.png" alt="image"></a>
+              <a href="#0"><img src="/images/icons/card-options/visa.png" alt="image"></a>
+              <a href="#0"><img src="/images/icons/card-options/paypal.png" alt="image"></a>
+              <a href="#0"><img src="/images/icons/card-options/mastercard.png" alt="image"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-section end -->
+
+  <!-- scroll-to-top start -->
+  <div class="scroll-to-top">
+    <span class="scroll-icon">
+      <i class="fa fa-rocket"></i>
+    </span>
+  </div>
+  <!-- scroll-to-top end --> 
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/jquery.nice-select.js"></script>
+  <script src="/js/lightcase.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/jquery-ui.min.js"></script>
+  <script src="/js/wow.min.js"></script>
+  <script src="/js/jquery.waypoints.min.js"></script>
+  <script src="/js/jquery.countup.min.js"></script>
+  <script src="/js/jquery.paroller.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

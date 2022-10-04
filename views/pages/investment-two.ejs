@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Broadtrademining - Isometric Investment Platform</title>
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/icofont.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/lightcase.css">
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="/css/nice-select.css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+
+  <!-- preloader start -->
+
+  <!-- preloader end -->
+
+    <!-- signin-area start -->
+   <!-- signin-area start -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bdr-radius">
+          <div class="signin-wrapper">
+            <div class="signin-wrapper-header text-center">
+              <div class="logo"><img src="/images/elements/logo-icon.png" alt="image"></div>
+              <h3 class="title">Login</h3>
+              <p>Welcome back, please sign in below</p>
+            </div>
+            <form action="/login" method="post" class="signin-form">
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
+              </div>
+              <div class="form-group">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="id-1" id="id-1" checked>
+                  <label for="id-1">Remember Password</label>
+                  <span class="checkbox"></span>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-hover">Log In</button>
+            </form>
+            <div class="signin-wrapper-footer">
+              <p class="bottom-text">Don’t have an account? <a href="#0" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal" aria-label="Close">Sign Up Now</a></p>
+              <div class="divider"><span>or</span></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- signin-area end -->
+    
+    <!-- signup-area start -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bdr-radius">
+          <div class="signin-wrapper">
+            <div class="signin-wrapper-header text-center">
+              <div class="logo"><img src="/images/elements/logo-icon.png" alt="image"></div>
+              <h3 class="title">Created Account</h3>
+              <p>please fill the form to create account</p>
+            </div>
+            <form action="/registration" method="post" class="signin-form">
+              <div class="form-group">
+                <label for="fullname">Fullname*</label>
+                <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Enter your Fullname" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
+              </div>
+              <div class="form-group">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name="id-2" id="id-2" checked>
+                  <label for="id-2">I do not want to be kept up to date about relevant investment opportunities, features, and events</label>
+                  <span class="checkbox"></span>
+                </div>
+              </div>
+              <button type="submit" value="submit" class="btn btn-primary btn-hover">Sign Up</button>
+            </form>
+            <div class="signin-wrapper-footer">
+              <p class="bottom-text">Already have an account?<a href="#0" data-toggle="modal" data-target="#signInModal" data-dismiss="modal" aria-label="Close">Login</a></p>
+              <div class="divider"><span>or</span></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- signup-area end -->
+    <!-- signup-area end -->
+  <!--  header-section start  -->
+  <header class="header-section transparent--header header--fixed">
+    <div class="header-top">
+        <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 col-md-6">
+            <div class="header-top-left d-flex">
+                <div class="support-part">
+                    <a href="tel:+88016558888454"><i class="fa fa-headphones"></i>Support</a>
+                </div>
+                <div class="email-part">
+                    <a href="/cdn-cgi/l/email-protection#f39a9d959cb391969b9c9c95dd909c9e"><i class="fa fa-envelope"></i><span class="__cf_email__" data-cfemail="dfb6b1b9b09fbdbab7b0b0b9f1bcb0b2">[email&#160;protected]</span></a>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="header-top-right d-flex align-items-center justify-content-end">
+                    <div class="language-part">
+                    <i class="fa fa-globe"></i>
+<div class="select d-inline-block w-auto ml-xl-3" id="google_translate_element"></div>
+                    </div>
+                    <div class="header-cart-count">
+                    <a href="/dashboard">
+                      <i class="fa fa-tachometer"></i>
+                      <span>Dashboard</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+        <nav class="navbar navbar-expand-xl">
+            <a class="site-logo site-title" href="/"><img src="/images/logo2.png" alt="site-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="menu-toggle"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav main-menu ml-auto">
+                <li class="active menu_has_children"><a href="/">Home</a>
+             
+                </li>
+                <li><a href="/about">about</a></li>
+               
+                
+          
+                <li><a href="/contact">contact us</a></li>
+            </ul>
+              <div class="header-join-part">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signInModal">join us</button>
+              </div>
+            </div>
+        </nav>
+        </div>
+    </div><!-- header-bottom end -->
+  </header>
+  <!--  header-section end  -->
+
+  <!-- inner-page-banner-section start -->
+  <section class="inner-page-banner-section gradient-bg">
+    <div class="illustration-img"><img src="/images/inner-page-banner-illustrations/investment.png" alt="image-illustration"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="inner-page-content-area">
+                    <h2 class="page-title">Investment</h2>
+                    <nav aria-label="breadcrumb" class="page-header-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item">Investment</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- inner-page-banner-section end -->
+  
+  <section class="investment-section pb-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="main-area">
+            <h2 class="title">Investment opportunities</h2>
+            <div class="filter-area">
+              <div class="filter-left">
+                <a href="#0" class="item-view-btn grid-view"><i class="fa fa-th"></i></a>
+                <a href="#0" class="item-view-btn list-view active"><i class="fa fa-bars"></i></a>
+                <div class="result-show-number">
+                  <span>Show :</span>
+                  <select>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                  </select>
+                </div>
+              </div>
+              <div class="filter-right">
+                <select>
+                  <option>All</option>
+                  <option>Category one</option>
+                  <option>Category Two</option>
+                  <option>Category Three</option>
+                  <option>Category Four</option>
+                  <option>Category Five</option>
+                </select>
+                <select>
+                  <option>Trending</option>
+                  <option>Category one</option>
+                  <option>Category Two</option>
+                  <option>Category Three</option>
+                  <option>Category Four</option>
+                  <option>Category Five</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mt-4 mb-none-30 investment-item-area list-view">
+              <div class="col-lg-6 investment-item">
+                <div class="investment-single mb-30">
+                  <div class="thumb  bg_img" data-background="/images/investment/2.jpg">
+                    <div class="icon"><img src="/images/icons/investment/1.png" alt="image"></div>
+                  </div>
+                  <div class="content">
+                    <div class="left">
+                      <h3 class="investment-title">Digital Litecoin Currency</h3>
+                      <p>Litecoin is a peer-to-peer cryptocurrency and open source software project</p>
+                      <div class="share-price"><h3 class="price">$3.00<small>/per share</small></h3></div>
+                      <div class="d-flex flex-wrap mt-5"> 
+                        <div class="icon-item d-flex flex-wrap">
+                          <div class="icon"><i class="icofont-ui-user-group"></i></div>
+                          <div class="content">
+                            <span class="counter">442</span>
+                            <p>investors</p>
+                          </div>
+                        </div><!-- icon-item end -->
+                        <div class="icon-item d-flex flex-wrap">
+                          <div class="icon"><i class="icofont-wall-clock"></i></div>
+                          <div class="content">
+                            <span class="counter">48</span><span>Days</span>
+                            <p>Time Remaining</p>
+                          </div>
+                        </div><!-- icon-item end -->
+                      </div>
+                      <div class="shares-part">
+                        <div class="share-item">
+                          <span class="caption">Weekly Dividend</span>
+                          <h4 class="amount">$0.25</h4>
+                        </div><!-- share-item end -->
+                        <div class="share-item">
+                          <span class="caption">Annual Return</span>
+                          <h4 class="amount">428.57%</h4>
+                        </div><!-- share-item end -->
+                        <div class="share-item">
+                          <span class="caption">Total Shares</span>
+                          <h4 class="amount">9,674</h4>
+                        </div><!-- share-item end -->
+                      </div><!-- shares-part end -->
+                    </div>
+                    <div class="right">
+                      <div class="share-price"><h3 class="price">$3.00<small>/per share</small></h3></div>
+                      <a href="#0" class="btn btn-primary btn-hover text-small">invest now</a>
+                      <a href="#0" class="add-wishlist"><i class="fa fa-heart"></i> Add to wish list</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- investment-single end -->
+              <div class="col-lg-6 investment-item">
+                <div class="investment-single mb-30">
+                  <div class="thumb  bg_img" data-background="/images/investment/3.jpg">
+                    <div class="icon"><img src="/images/icons/investment/2.png" alt="image"></div>
+                  </div>
+                  <div class="content">
+                    <div class="left">
+                      <h3 class="investment-title">Cheap Food Supply</h3>
+                      <p>Supplying quality  fresh food to all at cheap prices.our vision is to supply food at lower rates .</p>
+                      <div class="share-price"><h3 class="price">$3.15<small>/per share</small></h3></div>
+                      <div class="d-flex flex-wrap mt-5"> 
+                        <div class="icon-item d-flex flex-wrap">
+                          <div class="icon"><i class="icofont-ui-user-group"></i></div>
+                          <div class="content">
+                            <span class="counter">442</span>
+                            <p>investors</p>
+                          </div>
+                        </div><!-- icon-item end -->
+                        <div class="icon-item d-flex flex-wrap">
+                          <div class="icon"><i class="icofont-wall-clock"></i></div>
+                          <div class="content">
+                            <span class="counter">48</span><span>Days</span>
+                            <p>Time Remaining</p>
+                          </div>
+                        </div><!-- icon-item end -->
+                      </div>
+                      <div class="shares-part">
+                        <div class="share-item">
+                          <span class="caption">Weekly Dividend</span>
+                          <h4 class="amount">$0.25</h4>
+                        </div><!-- share-item end -->
+                        <div class="share-item">
+                          <span class="caption">Annual Return</span>
+                          <h4 class="amount">428.57%</h4>
+                        </div><!-- share-item end -->
+                        <div class="share-item">
+                          <span class="caption">Total Shares</span>
+                          <h4 class="amount">9,674</h4>
+                        </div><!-- share-item end -->
+                      </div><!-- shares-part end -->
+                    </div>
+                    <div class="right">
+                      <div class="share-price"><h3 class="price">$3.00<small>/per share</small></h3></div>
+                      <a href="#0" class="btn btn-primary btn-hover text-small">invest now</a>
+                      <a href="#0" class="add-wishlist"><i class="fa fa-heart"></i> Add to wish list</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- investment-single end -->
+              <div class="col-lg-6 investment-item">
+                <div class="investment-single mb-30">
+                  <div class="thumb  bg_img" data-background="/images/investment/4.jpg">
+                    <div class="icon"><img src="/images/icons/investment/3.png" alt="image"></div>
+                  </div>
+                  <div class="content">
+                    <div class="left">
+                      <h3 class="investment-title">Ethereum Mining Farm</h3>
+                      <p>Need some fund for  starting new ethereum mining farm project</p>
+                      <div class="share-price"><h3 class="price">$3.40<small>/per share</small></h3></div>
+                      <div class="d-flex flex-wrap mt-5"> 
+                        <div class="icon-item d-flex flex-wrap">
+                          <div class="icon"><i class="icofont-ui-user-group"></i></div>
+                          <div class="content">
+                            <span class="counter">442</span>
+                            <p>investors</p>
+                          </div>
+                        </div><!-- icon-item end -->
+                        <div class="icon-item d-flex flex-wrap">
+                          <div class="icon"><i class="icofont-wall-clock"></i></div>
+                          <div class="content">
+                            <span class="counter">48</span><span>Days</span>
+                            <p>Time Remaining</p>
+                          </div>
+                        </div><!-- icon-item end -->
+                      </div>
+                      <div class="shares-part">
+                        <div class="share-item">
+                          <span class="caption">Weekly Dividend</span>
+                          <h4 class="amount">$0.25</h4>
+                        </div><!-- share-item end -->
+                        <div class="share-item">
+                          <span class="caption">Annual Return</span>
+                          <h4 class="amount">428.57%</h4>
+                        </div><!-- share-item end -->
+                        <div class="share-item">
+                          <span class="caption">Total Shares</span>
+                          <h4 class="amount">9,674</h4>
+                        </div><!-- share-item end -->
+                      </div><!-- shares-part end -->
+                    </div>
+                    <div class="right">
+                      <div class="share-price"><h3 class="price">$3.00<small>/per share</small></h3></div>
+                      <a href="#0" class="btn btn-primary btn-hover text-small">invest now</a>
+                      <a href="#0" class="add-wishlist"><i class="fa fa-heart"></i> Add to wish list</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- investment-single end -->
+              <div class="col-lg-6 investment-item">
+                <div class="investment-single mb-30">
+                  <div class="thumb  bg_img" data-background="/images/investment/5.jpg">
+                    <div class="icon"><img src="/images/icons/investment/4.png" alt="image"></div>
+                  </div>
+                  <div class="content">
+                    <div class="left">
+                      <h3 class="investment-title">Ngapali Travels And Tours</h3>
+                      <p>Explore and Relax at Ngapali Beach Today with Us</p>
+                      <div class="share-price"><h3 class="price">$3.15<small>/per share</small></h3></div>
+                      <div class="d-flex flex-wrap mt-5"> 
+                        <div class="icon-item d-flex flex-wrap">
+                          <div class="icon"><i class="icofont-ui-user-group"></i></div>
+                          <div class="content">
+                            <span class="counter">442</span>
+                            <p>investors</p>
+                          </div>
+                        </div><!-- icon-item end -->
+                        <div class="icon-item d-flex flex-wrap">
+                          <div class="icon"><i class="icofont-wall-clock"></i></div>
+                          <div class="content">
+                            <span class="counter">48</span><span>Days</span>
+                            <p>Time Remaining</p>
+                          </div>
+                        </div><!-- icon-item end -->
+                      </div>
+                      <div class="shares-part">
+                        <div class="share-item">
+                          <span class="caption">Weekly Dividend</span>
+                          <h4 class="amount">$0.25</h4>
+                        </div><!-- share-item end -->
+                        <div class="share-item">
+                          <span class="caption">Annual Return</span>
+                          <h4 class="amount">428.57%</h4>
+                        </div><!-- share-item end -->
+                        <div class="share-item">
+                          <span class="caption">Total Shares</span>
+                          <h4 class="amount">9,674</h4>
+                        </div><!-- share-item end -->
+                      </div><!-- shares-part end -->
+                    </div>
+                    <div class="right">
+                      <div class="share-price"><h3 class="price">$3.00<small>/per share</small></h3></div>
+                      <a href="#0" class="btn btn-primary btn-hover text-small">invest now</a>
+                      <a href="#0" class="add-wishlist"><i class="fa fa-heart"></i> Add to wish list</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- investment-single end -->
+              <div class="col-lg-6 investment-item">
+                <div class="investment-single mb-30">
+                  <div class="thumb  bg_img" data-background="/images/investment/6.jpg">
+                    <div class="icon"><img src="/images/icons/investment/5.png" alt="image"></div>
+                  </div>
+                  <div class="content">
+                    <div class="left">
+                      <h3 class="investment-title">Trade-Exchange Bitcoin</h3>
+                      <p>Invest in the bitcoin trading business and receive high returns</p>
+                      <div class="share-price"><h3 class="price">$3.40<small>/per share</small></h3></div>
+                      <div class="d-flex flex-wrap mt-5"> 
+                        <div class="icon-item d-flex flex-wrap">
+                          <div class="icon"><i class="icofont-ui-user-group"></i></div>
+                          <div class="content">
+                            <span class="counter">442</span>
+                            <p>investors</p>
+                          </div>
+                        </div><!-- icon-item end -->
+                        <div class="icon-item d-flex flex-wrap">
+                          <div class="icon"><i class="icofont-wall-clock"></i></div>
+                          <div class="content">
+                            <span class="counter">48</span><span>Days</span>
+                            <p>Time Remaining</p>
+                          </div>
+                        </div><!-- icon-item end -->
+                      </div>
+                      <div class="shares-part">
+                        <div class="share-item">
+                          <span class="caption">Weekly Dividend</span>
+                          <h4 class="amount">$0.25</h4>
+                        </div><!-- share-item end -->
+                        <div class="share-item">
+                          <span class="caption">Annual Return</span>
+                          <h4 class="amount">428.57%</h4>
+                        </div><!-- share-item end -->
+                        <div class="share-item">
+                          <span class="caption">Total Shares</span>
+                          <h4 class="amount">9,674</h4>
+                        </div><!-- share-item end -->
+                      </div><!-- shares-part end -->
+                    </div>
+                    <div class="right">
+                      <div class="share-price"><h3 class="price">$3.00<small>/per share</small></h3></div>
+                      <a href="#0" class="btn btn-primary btn-hover text-small">invest now</a>
+                      <a href="#0" class="add-wishlist"><i class="fa fa-heart"></i> Add to wish list</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- investment-single end -->
+              <div class="col-lg-6 investment-item">
+                <div class="investment-single mb-30">
+                  <div class="thumb  bg_img" data-background="/images/investment/7.jpg">
+                    <div class="icon"><img src="/images/icons/investment/6.png" alt="image"></div>
+                  </div>
+                  <div class="content">
+                    <div class="left">
+                      <h3 class="investment-title">Custom Made Jewelries</h3>
+                      <p>We create masterpieces that perfectly captures soul romance</p>
+                      <div class="share-price"><h3 class="price">$6.40<small>/per share</small></h3></div>
+                      <div class="d-flex flex-wrap mt-5"> 
+                        <div class="icon-item d-flex flex-wrap">
+                          <div class="icon"><i class="icofont-ui-user-group"></i></div>
+                          <div class="content">
+                            <span class="counter">442</span>
+                            <p>investors</p>
+                          </div>
+                        </div><!-- icon-item end -->
+                        <div class="icon-item d-flex flex-wrap">
+                          <div class="icon"><i class="icofont-wall-clock"></i></div>
+                          <div class="content">
+                            <span class="counter">48</span><span>Days</span>
+                            <p>Time Remaining</p>
+                          </div>
+                        </div><!-- icon-item end -->
+                      </div>
+                      <div class="shares-part">
+                        <div class="share-item">
+                          <span class="caption">Weekly Dividend</span>
+                          <h4 class="amount">$0.25</h4>
+                        </div><!-- share-item end -->
+                        <div class="share-item">
+                          <span class="caption">Annual Return</span>
+                          <h4 class="amount">428.57%</h4>
+                        </div><!-- share-item end -->
+                        <div class="share-item">
+                          <span class="caption">Total Shares</span>
+                          <h4 class="amount">9,674</h4>
+                        </div><!-- share-item end -->
+                      </div><!-- shares-part end -->
+                    </div>
+                    <div class="right">
+                      <div class="share-price"><h3 class="price">$3.00<small>/per share</small></h3></div>
+                      <a href="#0" class="btn btn-primary btn-hover text-small">invest now</a>
+                      <a href="#0" class="add-wishlist"><i class="fa fa-heart"></i> Add to wish list</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- investment-single end -->
+            </div>
+            <div class="row justify-content-center mt-50">
+              <div class="col-lg-12">
+                <nav aria-label="Page navigation">
+                  <ul class="pagination justify-content-center align-items-center">
+                    <li class="page-item prev">
+                      <a class="page-link" href="#"><i class="fa fa-angle-double-left"></i></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item next">
+                      <a class="page-link" href="#"><i class="fa fa-angle-double-right"></i></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer-section start -->
+  <footer class="footer-section anim">
+    <div class="footer-top bg_img" data-background="/images/footer-bg.png">
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+            <div class="section-header text-white text-center">
+                <span class="section-subtitle">Subscribe us</span>
+                <h2 class="section-title">For Newsletter</h2>
+                <p>Join 14,000+ satisfied Fast Invest customers! <a href="#0">Register</a> and Subscribe to our newsletter to receive all the latest news and updates. </p>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+            <div class="subscribe-wrapper">
+                <span class="icon wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.5s"><img src="/images/icons/subscribe.png" alt="icon"></span>
+                <form class="subscribe-form">
+                <input type="text" name="subs_name" id="subs_name" placeholder="Your Email Address">
+                <button type="submit" class="subs-btn">subscribe<span class="btn-icon"><img src="/images/icons/paper-plane.png" alt="icon"></span></button>
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+            <div class="footer-widget">
+                <h3 class="widget-title">About Broadtrademining</h3>
+                <ul class="footer-menu-list">
+                <li><a href="#0">About us</a></li>
+                <li><a href="#0">Contact Us</a></li>
+                <li><a href="#0">Latest Blog</a></li>
+                <li><a href="#0">Authenticity Guarantee</a></li>
+                <li><a href="#0">Customer Reviews</a></li>
+                <li><a href="#0">Privacy Policy</a></li>
+                <li><a href="#0">Business License</a></li>
+                </ul>
+            </div>
+            </div><!-- footer-widget end -->
+            <div class="col-md-3">
+            <div class="footer-widget">
+                <h3 class="widget-title">My Account</h3>
+                <ul class="footer-menu-list">
+                <li><a href="#0">Manage Your Account</a></li>
+                <li><a href="#0">How to Deposit</a></li>
+                <li><a href="#0">How to Withdraw</a></li>
+                <li><a href="#0">Account Varification</a></li>
+                <li><a href="#0">Safety & Security</a></li>
+                <li><a href="#0">Investments</a></li>
+                <li><a href="#0">Membership Level</a></li>
+                </ul>
+            </div>
+            </div><!-- footer-widget end -->
+            <div class="col-md-3">
+            <div class="footer-widget">
+                <h3 class="widget-title">help center</h3>
+                <ul class="footer-menu-list">
+                <li><a href="#0">Investor help centre</a></li>
+                <li><a href="#0">Entrepreneur help centre</a></li>
+                <li><a href="#0">FAQ</a></li>
+                <li><a href="#0">Quick Start Guide</a></li>
+                <li><a href="#0">Associate Blog</a></li>
+                <li><a href="#0">Tutorials</a></li>
+                <li><a href="#0">Returns & Claims</a></li>
+                </ul>
+            </div>
+            </div><!-- footer-widget end -->
+            <div class="col-md-3">
+            <div class="footer-widget">
+                <h3 class="widget-title">legal info</h3>
+                <ul class="footer-menu-list">
+                <li><a href="#0">Risk Warnings</a></li>
+                <li><a href="#0">Privacy Notice</a></li>
+                <li><a href="#0">Security</a></li>
+                <li><a href="#0">Terms of Service</a></li>
+                <li><a href="#0">Become Affiliate</a></li>
+                <li><a href="#0">Complaints Policy</a></li>
+                </ul>
+            </div>
+            </div><!-- footer-widget end -->
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+            <div class="btn-area text-center">
+                <a href="#0" class="wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.5s"><img src="/images/buttons/google.png" alt="button"></a>
+                <a href="#0" class="wow zoomIn" data-wow-duration="0.7s" data-wow-delay="0.5s"><img src="/images/buttons/apple.png" alt="button"></a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+            <p class="copy-right-text">Copyright © 2022.All Rights Reserved By <a href="/">Broadtrademining</a></p>
+            </div>
+            <div class="col-lg-6">
+            <div class="card-list text-right">
+                <a href="#0"><img src="/images/icons/card-options/americanexpress.png" alt="image"></a>
+                <a href="#0"><img src="/images/icons/card-options/maestro.png" alt="image"></a>
+                <a href="#0"><img src="/images/icons/card-options/visa.png" alt="image"></a>
+                <a href="#0"><img src="/images/icons/card-options/paypal.png" alt="image"></a>
+                <a href="#0"><img src="/images/icons/card-options/mastercard.png" alt="image"></a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </footer>
+  <!-- footer-section end -->
+
+  <!-- scroll-to-top start -->
+  <div class="scroll-to-top">
+    <span class="scroll-icon">
+      <i class="fa fa-rocket"></i>
+    </span>
+  </div>
+  <!-- scroll-to-top end --> 
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/jquery.nice-select.js"></script>
+  <script src="/js/lightcase.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/jquery-ui.min.js"></script>
+  <script src="/js/wow.min.js"></script>
+  <script src="/js/jquery.waypoints.min.js"></script>
+  <script src="/js/jquery.countup.min.js"></script>
+  <script src="/js/jquery.paroller.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
