@@ -94,7 +94,7 @@
                   <span class="checkbox"></span>
                 </div>
               </div>
-              <button type="submit" value="submit" class="btn btn-primary btn-hover">Sign Up</button>
+              <button type="submit" value="submit" class="btn btn-primary btn-hover">Log In</button>
             </form>
             <div class="signin-wrapper-footer">
               <p class="bottom-text">Already have an account?<a href="#0" data-toggle="modal" data-target="#signInModal" data-dismiss="modal" aria-label="Close">Login</a></p>
@@ -647,7 +647,86 @@
                 <a id="premium-tab" data-toggle="tab" href="#premium" role="tab" aria-controls="premium" aria-selected="false">calculate</a>
               </li>
             </ul>
-
+            <div class="tab-content" id="calculatorTabContent">
+              <div class="tab-pane fade show active" id="basic" role="tabpanel" aria-labelledby="basic-tab">
+                <div class="invest-amount-area text-center">
+                  <h4 class="title">Invest Amount</h4>
+                  <div class="main-amount">
+                    <input type="text" class="calculator-invest" id="basic-amount" readonly>
+                  </div>
+                  <div id="slider-range-min-one" class="invest-range-slider"></div>
+                </div><!-- invest-amount-area end -->
+                <div class="plan-amount-calculate">
+                  <div class="item">
+                    <span class="caption">Basic plan</span>
+                    <span class="details">Minimum Deposit $5</span>
+                  </div>
+                  <div class="item">
+                    <span class="profit-amount">$12.67</span>
+                    <span class="profit-details">Daily Profit</span>
+                  </div>
+                  <div class="item">
+                    <span class="profit-amount">$12.67</span>
+                    <span class="profit-details">per month</span>
+                  </div>
+                  <div class="item">
+                    <a href="#" class="invest-btn btn-round">invest now</a>
+                  </div>
+                </div><!-- plan-amount-calculate end -->
+              </div>
+              <div class="tab-pane fade" id="satandard" role="tabpanel" aria-labelledby="satandard-tab">
+                <div class="invest-amount-area text-center">
+                  <h4 class="title">Invest Amount</h4>
+                  <div class="main-amount">
+                    <input type="text" class="calculator-invest" id="satandard-amount" readonly>
+                  </div>
+                  <div id="slider-range-min-two" class="invest-range-slider"></div>
+                </div><!-- invest-amount-area end -->
+                <div class="plan-amount-calculate">
+                  <div class="item">
+                    <span class="caption">satandard plan</span>
+                    <span class="details">Minimum Deposit $15</span>
+                  </div>
+                  <div class="item">
+                    <span class="profit-amount">$12.67</span>
+                    <span class="profit-details">Daily Profit</span>
+                  </div>
+                  <div class="item">
+                    <span class="profit-amount">$12.67</span>
+                    <span class="profit-details">per month</span>
+                  </div>
+                  <div class="item">
+                    <a href="#" class="invest-btn btn-round">invest now</a>
+                  </div>
+                </div><!-- plan-amount-calculate end -->
+              </div>
+              <div class="tab-pane fade" id="premium" role="tabpanel" aria-labelledby="premium-tab">
+                <div class="invest-amount-area text-center">
+                  <h4 class="title">Invest Amount</h4>
+                  <div class="main-amount">
+                    <input type="text" class="calculator-invest" id="premium-amount" readonly>
+                  </div>
+                  <div id="slider-range-min-three" class="invest-range-slider"></div>
+                </div><!-- invest-amount-area end -->
+                <div class="plan-amount-calculate">
+                  <div class="item">
+                    <span class="caption">premium plan</span>
+                    <span class="details">Minimum Deposit $25</span>
+                  </div>
+                  <div class="item">
+                    <span class="profit-amount">$12.67</span>
+                    <span class="profit-details">Daily Profit</span>
+                  </div>
+                  <div class="item">
+                    <span class="profit-amount">$12.67</span>
+                    <span class="profit-details">per month</span>
+                  </div>
+                  <div class="item">
+                    <a href="#" class="invest-btn btn-round">invest now</a>
+                  </div>
+                </div><!-- plan-amount-calculate end -->
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1352,7 +1431,67 @@
   <!-- investors-section end -->
 
   <!-- contest-winner-section start  -->
- 
+  <section class="contest-winner-section pt-120 pb-120">
+    <div class="shape"><img src="/images/elements/contest-shape.png" alt="image"></div>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-xl-6 col-lg-6">
+          <div class="contest-winner-content">
+            <div class="section-header text-lg-left text-center">
+              <span class="section-subtitle">Take a look at our latest</span>
+              <h2 class="section-title">Contest Winners</h2>
+              <p>The contest is based on sales from your referrals.The person with the most total  referral's revenue will get the Grand Prize. The more revenue your referrals produce the bigger chance for you to be on top.</p>
+              <a href="#0" class="btn btn-primary">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="contest-winner-slider owl-carousel">
+            <div class="contest-winner-item">
+              <div class="thumb">
+                <img src="/images/contest-winner/1.png" alt="image">
+                <span class="icon"><img src="/images/icons/contest-winner/trophy.svg" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+            <div class="contest-winner-item">
+              <div class="thumb">
+                <img src="/images/contest-winner/1.png" alt="image">
+                <span class="icon"><img src="/images/icons/contest-winner/trophy.svg" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+            <div class="contest-winner-item">
+              <div class="thumb">
+                <img src="/images/contest-winner/1.png" alt="image">
+                <span class="icon"><img src="/images/icons/contest-winner/trophy.svg" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+            <div class="contest-winner-item">
+              <div class="thumb">
+                <img src="/images/contest-winner/1.png" alt="image">
+                <span class="icon"><img src="/images/icons/contest-winner/trophy.svg" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+            <div class="contest-winner-item">
+              <div class="thumb">
+                <img src="/images/contest-winner/1.png" alt="image">
+                <span class="icon"><img src="/images/icons/contest-winner/trophy.svg" alt="icon"></span>
+                <span class="amount">$1,000.00</span>
+                <span class="date">feb 2019</span>
+              </div>
+            </div><!-- contest-winner-item end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- contest-winner-section end  -->
 
   <!-- partner-section start -->
@@ -1403,49 +1542,103 @@
 
   <!-- footer-section start -->
   <footer class="footer-section">
-    <div class="footer-top bg_img" data-background="/images/footer-bg-3.png">
+    <div class="footer-top bg_img" data-background="/images/footer-bg.png">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <div class="section-header text-white text-center">
-              <span class="section-subtitle">Subscribe to Broadtrademining</span>
-              <h2 class="section-title">To Get Exclusive Benefits</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
           <div class="col-lg-8">
-            <div class="subscribe-wrapper style--two">
-              <form class="subscribe-form">
-                <input type="text" name="subs_name" id="subs_name" placeholder="Your Email Address">
-                <button type="submit" class="subs-btn">subscribe</button>
-              </form>
+            <div class="section-header text-white text-center">
+              <span class="section-subtitle">Subscribe us</span>
+              <h2 class="section-title">For Newsletter</h2>
+              <p>Join 14,000+ satisfied Fast Invest customers! <a href="#0">Register</a> and Subscribe to our newsletter to receive all the latest news and updates. </p>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3">
-            <div class="footer-widget">
+          <div class="col-lg-12">
+            <div class="subscribe-wrapper">
+              <span class="icon wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.5s"><img src="/images/icons/subscribe.png" alt="icon"></span>
+              <form class="subscribe-form">
+                <input type="text" name="subs_name" id="subs_name" placeholder="Your Email Address">
+                <button type="submit" class="subs-btn">subscribe<span class="btn-icon"><img src="/images/icons/paper-plane.png" alt="icon"></span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-none-30">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget mb-30">
               <h3 class="widget-title">About Broadtrademining</h3>
               <ul class="footer-menu-list">
-                <li><a href="/about">About us</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-                <li><a href="/dashboard">Manage Your Account</a></li>
+                <li><a href="#0">About us</a></li>
+                <li><a href="#0">Contact Us</a></li>
+                <li><a href="#0">Latest Blog</a></li>
+                <li><a href="#0">Authenticity Guarantee</a></li>
+                <li><a href="#0">Customer Reviews</a></li>
+                <li><a href="#0">Privacy Policy</a></li>
+                <li><a href="#0">Business License</a></li>
+              </ul>
+            </div>
+          </div><!-- footer-widget end -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget mb-30">
+              <h3 class="widget-title">My Account</h3>
+              <ul class="footer-menu-list">
+                <li><a href="#0">Manage Your Account</a></li>
+                <li><a href="#0">How to Deposit</a></li>
+                <li><a href="#0">How to Withdraw</a></li>
+                <li><a href="#0">Account Varification</a></li>
+                <li><a href="#0">Safety & Security</a></li>
+                <li><a href="#0">Investments</a></li>
+                <li><a href="#0">Membership Level</a></li>
+              </ul>
+            </div>
+          </div><!-- footer-widget end -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget mb-30">
+              <h3 class="widget-title">help center</h3>
+              <ul class="footer-menu-list">
+                <li><a href="#0">Investor help centre</a></li>
+                <li><a href="#0">Entrepreneur help centre</a></li>
+                <li><a href="#0">FAQ</a></li>
+                <li><a href="#0">Quick Start Guide</a></li>
+                <li><a href="#0">Associate Blog</a></li>
+                <li><a href="#0">Tutorials</a></li>
+                <li><a href="#0">Returns & Claims</a></li>
+              </ul>
+            </div>
+          </div><!-- footer-widget end -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-widget mb-30">
+              <h3 class="widget-title">legal info</h3>
+              <ul class="footer-menu-list">
+                <li><a href="#0">Risk Warnings</a></li>
+                <li><a href="#0">Privacy Notice</a></li>
+                <li><a href="#0">Security</a></li>
+                <li><a href="#0">Terms of Service</a></li>
+                <li><a href="#0">Become Affiliate</a></li>
+                <li><a href="#0">Complaints Policy</a></li>
               </ul>
             </div>
           </div><!-- footer-widget end -->
         </div>
- 
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="btn-area text-center">
+              <a href="#0" class="wow zoomIn" data-wow-duration="0.3s" data-wow-delay="0.5s"><img src="/images/buttons/google.png" alt="button"></a>
+              <a href="#0" class="wow zoomIn" data-wow-duration="0.7s" data-wow-delay="0.5s"><img src="/images/buttons/apple.png" alt="button"></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6">
-            <p class="copy-right-text">Copyright © 2022.All Rights Reserved By <a href="/">Broadtrademining</a></p>
+          <div class="col-md-6">
+            <p class="copy-right-text text-md-left text-center mb-md-0 mb-3">Copyright © 2022.All Rights Reserved By <a href="/">Broadtrademining</a></p>
           </div>
-          <div class="col-lg-6">
-            <div class="card-list text-right">
+          <div class="col-md-6">
+            <div class="card-list text-md-right text-center">
               <a href="#0"><img src="/images/icons/card-options/americanexpress.png" alt="image"></a>
               <a href="#0"><img src="/images/icons/card-options/maestro.png" alt="image"></a>
               <a href="#0"><img src="/images/icons/card-options/visa.png" alt="image"></a>

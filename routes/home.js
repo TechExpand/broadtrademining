@@ -26,8 +26,8 @@ let transporter = nodemailer.createTransport({
         type: 'OAuth2',
         user: "speedsterfxweb@gmail.com",
         pass: "speedsterfxweb101",
-        clientId: "578020731868-ghru19tab9srobgt48d3jva5p2u1ikll.apps.googleusercontent.com",
-        clientSecret: "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",
+        clientId: "1084250007715-674kff4sq5751sn12c6vc85ph444ctbm.apps.googleusercontent.com",
+        clientSecret: "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",
         refreshToken: "1//044V94zlH9k6sCgYIARAAGAQSNwF-L9Irvu6Twdyoto4eTXBhyo7YaOPoEiCDLfUkMLn1VeWcQMGliwJ6qZzLoP4h4KVB4PKAs14"
     }
 });
@@ -255,7 +255,7 @@ router.post("/login", function (req, res, next) {
                                             res.cookie("user", user._id, { expires: time })
                                               
 
-                                            if(user.email === "speedsterfxweb@gmail.com"){
+                                            if(user.email === "ogcourage@gmail.com"){
                                                 res.cookie("isadmin", true, { expires: time })
 
 
