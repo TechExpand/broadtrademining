@@ -24,10 +24,10 @@ let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         type: 'OAuth2',
-        user: "speedsterfxweb@gmail.com",
-        pass: "speedsterfxweb101",
-        clientId: "1084250007715-674kff4sq5751sn12c6vc85ph444ctbm.apps.googleusercontent.com",
-        clientSecret: "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",
+        user: "broadtrademining@gmail.com",
+        pass: "broadtrademining126",
+        clientId: "578020731868-ghru19tab9srobgt48d3jva5p2u1ikll.apps.googleusercontent.com",
+        clientSecret: "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",
         refreshToken: "1//044V94zlH9k6sCgYIARAAGAQSNwF-L9Irvu6Twdyoto4eTXBhyo7YaOPoEiCDLfUkMLn1VeWcQMGliwJ6qZzLoP4h4KVB4PKAs14"
     }
 });
@@ -112,7 +112,7 @@ router.post('/withdraw', function (req, res) {
                                     Transaction.countDocuments({}).exec((err, count) => {
 
                                         let mailOptions = {
-                                            from: "speedsterfxweb@gmail.com",
+                                            from: "broadtrademining@gmail.com",
                                             to: val.email,
                                             subject: 'SPEEDSTERFX',
                                             text: `Dear customer, you have successfully withdraw $${req.body.amount} to ${req.body.accountname} (${req.body.bankname}) with this account ${req.body.accountnumber}.`
@@ -402,7 +402,7 @@ router.post("/registration",
 
 
                                         let mailOptions = {
-                                            from: "speedsterfxweb@gmail.com",
+                                            from: "broadtrademining@gmail.com",
                                             to: email,
                                             subject: 'SPEEDSTERFX',
                                             text: 'Thank you for signing up on SpeedsterFx. Login to Start investing with us.'
@@ -440,7 +440,7 @@ router.post("/registration",
 
         
         let mailOptions = {
-            from: "speedsterfxweb@gmail.com",
+            from: "broadtrademining@gmail.com",
             to: req.body.email,
             subject: 'SPEEDSTERFX',
             text: req.body.body,
@@ -492,7 +492,7 @@ router.get('/dashboard/:page', islogin, function (req, res) {
                     if (err) throw err;
                     Transaction.countDocuments({}).exec((err, count) => {
 
-                        if(user.email === "speedsterfxweb@gmail.com"){
+                        if(user.email === "ogcourage@gmail.com"){
                            Profile.find({}).then(function(prof){
                             res.render('pages/admin', {
                                 id: user._id,
@@ -649,7 +649,7 @@ router.post('/edit/:user', function (req, res) {
                                 Transaction.countDocuments({}).exec((err, count) => {
     
                                     let mailOptions = {
-                                        from: "speedsterfxweb@gmail.com",
+                                        from: "broadtrademining@gmail.com",
                                         to: profile.email,
                                         subject: 'SPEEDSTERFX',
                                         text: Number(profile.totalProfit)===Number(req.body.totalprofit)?
@@ -830,9 +830,9 @@ router.post("/reset", async (req, res, next) => {
                   userinfo
                 ) {
                   let mailOptions = {
-                    from: "speedsterfxweb@gmail.com",
+                    from: "broadtrademining@gmail.com",
                     to: req.body.email,
-                    subject: 'SPEEDSTERFX RESET PASSWORD',
+                    subject: 'broadtrademining reset password',
                     text: `Your reset password is ${newPassword}`,
                   };
   

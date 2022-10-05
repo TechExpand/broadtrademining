@@ -26,17 +26,17 @@
 
   <!-- preloader end -->
 
-    <!-- sign in-area start -->
-    <div class="modal fade" id="sign inModal" tabindex="-1" role="dialog"  aria-hidden="true">
+    <!-- signin-area start -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog"  aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content bdr-radius">
-          <div class="sign in-wrapper">
-            <div class="sign in-wrapper-header text-center">
+          <div class="signin-wrapper">
+            <div class="signin-wrapper-header text-center">
               <div class="logo"><img src="/images/elements/logo-icon.png" alt="image"></div>
               <h3 class="title">Login</h3>
               <p>Welcome back, please sign in below</p>
             </div>
-            <form action="/login" method="post" class="sign in-form">
+            <form action="/login" method="post" class="signin-form">
               <div class="form-group">
                 <label for="email">Email*</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
@@ -54,7 +54,7 @@
               </div>
               <button type="submit" class="btn btn-primary btn-hover">Log In</button>
             </form>
-            <div class="sign in-wrapper-footer">
+            <div class="signin-wrapper-footer">
               <p class="bottom-text">Don’t have an account? <a href="#0" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal" aria-label="Close">Sign Up Now</a></p>
               <div class="divider"><span>or</span></div>
 
@@ -63,19 +63,19 @@
         </div>
       </div>
     </div>
-    <!-- sign in-area end -->
+    <!-- signin-area end -->
     
     <!-- signup-area start -->
     <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"  aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content bdr-radius">
-          <div class="sign in-wrapper">
-            <div class="sign in-wrapper-header text-center">
+          <div class="signin-wrapper">
+            <div class="signin-wrapper-header text-center">
               <div class="logo"><img src="/images/elements/logo-icon.png" alt="image"></div>
               <h3 class="title">Created Account</h3>
               <p>please fill the form to create account</p>
             </div>
-            <form action="/registration" method="post" class="sign in-form">
+            <form action="/registration" method="post" class="signin-form">
               <div class="form-group">
                 <label for="fullname">Fullname*</label>
                 <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Enter your Fullname" required>
@@ -97,8 +97,8 @@
               </div>
               <button type="submit" value="submit" class="btn btn-primary btn-hover">Sign Up</button>
             </form>
-            <div class="sign in-wrapper-footer">
-              <p class="bottom-text">Already have an account?<a href="#0" data-toggle="modal" data-target="#sign inModal" data-dismiss="modal" aria-label="Close">Login</a></p>
+            <div class="signin-wrapper-footer">
+              <p class="bottom-text">Already have an account?<a href="#0" data-toggle="modal" data-target="#signInModal" data-dismiss="modal" aria-label="Close">Login</a></p>
               <div class="divider"><span>or</span></div>
 
             </div>
@@ -160,7 +160,7 @@
               <li><a href="/dashboard">Dashboard</a></li>
           </ul>
             <div class="header-join-part">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign inModal">sign in</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signInModal">Sign in</button>
             </div>
           </div>
         </nav>
