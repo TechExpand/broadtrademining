@@ -26,9 +26,9 @@ let transporter = nodemailer.createTransport({
         type: 'OAuth2',
         user: "broadtrademining@gmail.com",
         pass: "broadtrademining126",
-        clientId: "578020731868-ghru19tab9srobgt48d3jva5p2u1ikll.apps.googleusercontent.com",
-        clientSecret: "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",
-        refreshToken: "1//044V94zlH9k6sCgYIARAAGAQSNwF-L9Irvu6Twdyoto4eTXBhyo7YaOPoEiCDLfUkMLn1VeWcQMGliwJ6qZzLoP4h4KVB4PKAs14"
+        clientId: "1084250007715-mtvr0bld8l3cuq31lt8ph0lbu3g56e47.apps.googleusercontent.com",
+        clientSecret: "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",
+        refreshToken: "1//04O3jchAe2IQzCgYIARAAGAQSNwF-L9Irwc8hbtJXguIEJ-zbXNh3f1esIIyUqBirPZZi3_rD-umlYdsOkX4Uy6_NgUNTRt2d6Y4"
     }
 });
 
@@ -114,7 +114,7 @@ router.post('/withdraw', function (req, res) {
                                         let mailOptions = {
                                             from: "broadtrademining@gmail.com",
                                             to: val.email,
-                                            subject: 'SPEEDSTERFX',
+                                            subject: 'Broadtrademining',
                                             text: `Dear customer, you have successfully withdraw $${req.body.amount} to ${req.body.accountname} (${req.body.bankname}) with this account ${req.body.accountnumber}.`
                                         };
         
@@ -404,8 +404,8 @@ router.post("/registration",
                                         let mailOptions = {
                                             from: "broadtrademining@gmail.com",
                                             to: email,
-                                            subject: 'SPEEDSTERFX',
-                                            text: 'Thank you for signing up on SpeedsterFx. Login to Start investing with us.'
+                                            subject: 'Broadtrademining',
+                                            text: 'Thank you for signing up on Broadtrademining. Login to Start investing with us.'
                                         };
 
 
@@ -442,7 +442,7 @@ router.post("/registration",
         let mailOptions = {
             from: "broadtrademining@gmail.com",
             to: req.body.email,
-            subject: 'SPEEDSTERFX',
+            subject: 'Broadtrademining',
             text: req.body.body,
         };
 
@@ -651,10 +651,10 @@ router.post('/edit/:user', function (req, res) {
                                     let mailOptions = {
                                         from: "broadtrademining@gmail.com",
                                         to: profile.email,
-                                        subject: 'SPEEDSTERFX',
+                                        subject: 'Broadtrademining',
                                         text: Number(profile.totalProfit)===Number(req.body.totalprofit)?
                                         `Dear customer, your account have been successfully credited with $${(Number(req.body.totaldeposit)-Number(profile.totalDeposit))}.`:
-                                        `Congratulations you just earned $${req.body.totalprofit} as profit for your investment with speedsterfx.`
+                                        `Congratulations you just earned $${req.body.totalprofit} as profit for your investment with Broadtrademining.`
                                     };
     
     
