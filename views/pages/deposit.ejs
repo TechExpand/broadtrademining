@@ -216,7 +216,7 @@
                     
                       
                       <div class="col-lg-12 text-center">
-                        <button type="button" onclick=" showCopyToast()" class="btn btn-primary">Copy</button>
+                        <button type="button" id="buttonE" class="btn btn-primary">Copy</button>
                       </div>
                     </div>
                   </form>
@@ -300,6 +300,7 @@
 
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/jquery-3.3.1.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
   <script src="/js/jquery.nice-select.js"></script>
   <script src="/js/lightcase.js"></script>
   <script src="/js/owl.carousel.min.js"></script>
@@ -309,8 +310,9 @@
   <script src="/js/jquery.waypoints.min.js"></script>
   <script src="/js/jquery.countup.min.js"></script>
   <script src="/js/jquery.paroller.min.js"></script>
+  <script src="/js/jquery.toast.min.js"></script>
   <script src="/js/contact.js"></script>
-  <script src="/js/main.js"></script>
+
   <script>
     function googleTranslateElementInit() {
         new google.translate.TranslateElement(
@@ -321,14 +323,18 @@
 </script>
 
 
-  <script src="/js/jquery.toast.min.js"></script>
+
 
   <% let messages = message; %>
   <% let messages2 = message.address; %>
   <script>
+
+
+
    let getMessage2 = "<%= messages2  %>"; 
-function showCopyToast(text){
-      console.log("donee");
+
+function showToast(){
+      console.log("doneexxxxxxx");
       navigator.clipboard.writeText(getMessage2);
       $.toast({
         text: "Address copied",
@@ -340,28 +346,12 @@ function showCopyToast(text){
 
 
 
-     let getMessage = "<%= messages  %>"; 
-    function showToast(text){
-      console.log("donee");
-      navigator.clipboard.writeText(getMessage);
-      $.toast({
-        text: text,
-      showHideTransition: 'slide',
-      icon: 'error',
-      heading: 'Failed',}
-      )
-      }
+  var buttonE = document.getElementById("buttonE");
 
-     
-      if(getMessage === "null"){
+// Second, assign click event
+buttonE.addEventListener("click", showToast, false);
 
-      }else if(getMessage === "pop"){
-        showToast("Login/Signup an account")
-      }
-      
-      else{
-        showToast(getMessage)
-      }
+
 
       
   </script>

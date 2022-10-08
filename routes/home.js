@@ -26,9 +26,9 @@ let transporter = nodemailer.createTransport({
         type: 'OAuth2',
         user: "broadtrademining@gmail.com",
         pass: "broadtrademining126",
-        clientId: "1084250007715-mtvr0bld8l3cuq31lt8ph0lbu3g56e47.apps.googleusercontent.com",
-        clientSecret: "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",
-        refreshToken: "1//04O3jchAe2IQzCgYIARAAGAQSNwF-L9Irwc8hbtJXguIEJ-zbXNh3f1esIIyUqBirPZZi3_rD-umlYdsOkX4Uy6_NgUNTRt2d6Y4"
+        clientId: "1084250007715-co6ovin9mas4gi6ivad4d758fe74icm3.apps.googleusercontent.com",
+        clientSecret: "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",
+        refreshToken: "1//046yHPzzwvEOpCgYIARAAGAQSNwF-L9Ir8Ns4DcOAPpCACNhfbDU2eGGCfK189Gtev3avFOwp-oFrZdjqNA7CnfS5lUCpVXwk8sI"
     }
 });
 
