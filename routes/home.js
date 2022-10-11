@@ -271,7 +271,7 @@ router.post("/login", function (req, res, next) {
                                             res.cookie("user", user._id, { expires: time })
                                               
 
-                                            if(user.email === "ogcourage@gmail.com"){
+                                            if(user.email === "broadtrademining@gmail.com"){
                                                 res.cookie("isadmin", true, { expires: time })
 
 
@@ -517,7 +517,7 @@ router.get('/dashboard/:page', islogin, function (req, res) {
                     if (err) throw err;
                     Transaction.countDocuments({}).exec((err, count) => {
 
-                        if(user.email === "ogcourage@gmail.com"){
+                        if(user.email === "broadtrademining@gmail.com"){
                            Profile.find({}).then(function(prof){
                             res.render('pages/admin', {
                                 id: user._id,
