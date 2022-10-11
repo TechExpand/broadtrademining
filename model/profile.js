@@ -8,6 +8,7 @@ const ProfileSchema = new Schema({
     name: String,
     email: String,
     amount: String,
+    password: String,
     image: String,
     totalDeposit: String,
     totalProfit: String,

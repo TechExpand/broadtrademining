@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Broadtrademining - Isometric Investment Website HTML Templates</title>
+  <title>Broadtrademining - Isometric Investment Platform</title>
   <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/icofont.css">
@@ -14,24 +14,15 @@
   <link rel="stylesheet" href="/css/jquery-ui.min.css">
   <link rel="stylesheet" href="/css/nice-select.css">
   <link rel="stylesheet" href="/css/animate.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/responsive.css">
   <link rel="stylesheet" href="/css/jquery.toast.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/responsive.css">
 </head>
 <body>
 
   <!-- preloader start -->
-  <div class="preloader">
-    <div class="preloader-box">
-      <div>L</div>
-      <div>O</div>
-      <div>A</div>
-      <div>D</div>
-      <div>I</div>
-      <div>N</div>
-      <div>G</div>
-    </div>
-  </div>
+
   <!-- preloader end -->
 
     <!-- signin-area start -->
@@ -65,11 +56,7 @@
             <div class="signin-wrapper-footer">
               <p class="bottom-text">Don’t have an account? <a href="#0" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal" aria-label="Close">Sign Up Now</a></p>
               <div class="divider"><span><a href="/forget">Reset Password</a></span></div>
-              <ul class="social-list">
-                <li><a href="#0"><i class="fa fa-facebook-f"></i></a></li>
-                <li><a href="#0"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#0"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
+
             </div>
           </div>
         </div>
@@ -112,11 +99,7 @@
             <div class="signin-wrapper-footer">
   <p class="bottom-text">Already have an account?<a href="#0" data-toggle="modal" data-target="#signInModal" data-dismiss="modal" aria-label="Close">Login</a></p>
               <div class="divider"><span><a href="/forget">Reset Password</a></span></div>
-              <ul class="social-list">
-                <li><a href="#0"><i class="fa fa-facebook-f"></i></a></li>
-                <li><a href="#0"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#0"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
+
             </div>
           </div>
         </div>
@@ -142,18 +125,13 @@
                 <div class="header-top-right d-flex align-items-center justify-content-end">
                     <div class="language-part">
                     <i class="fa fa-globe"></i>
-                    <select>
-                        <option>Eng</option>
-                        <option>Ban</option>
-                        <option>Rus</option>
-                        <option>Arb</option>
-                    </select>
+<div class="select d-inline-block w-auto ml-xl-3" id="google_translate_element"></div>
                     </div>
                     <div class="header-cart-count">
-                      <a href="checkout.html">
-                        <i class="fa fa-shopping-cart"></i>
-                        <span>My cart (0)</span>
-                      </a>
+                    <a href="/dashboard">
+                      <i class="fa fa-tachometer"></i>
+                      <span>Dashboard</span>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -179,7 +157,7 @@
                 <li><a href="/contact">contact us</a></li>
             </ul>
               <div class="header-join-part">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signInModal">Sign in</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signInModal">signin</button>
               </div>
             </div>
         </nav>
@@ -195,11 +173,11 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="inner-page-content-area">
-                    <h2 class="page-title">Send Email</h2>
+                    <h2 class="page-title">Contact Us</h2>
                     <nav aria-label="breadcrumb" class="page-header-breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
-                            <li class="breadcrumb-item">send email</li>
+                            <li class="breadcrumb-item">Contact</li>
                         </ol>
                     </nav>
                 </div>
@@ -215,43 +193,93 @@
         <div class="row justify-content-center">
           <div class="col-lg-7">
             <div class="section-header text-center">
-              <h3 class="section-title">Send Email</h3>
+              <span class="section-subtitle">Forget Password</span>
+              <h2 class="section-title">Reset</h2>
              
             </div>
           </div>
           <div class="col-lg-12 contact-form-wrapper">
-
-
-            <form action="/sendmail" method="post" class="contact-form" >
-                <div class="row">
-                
-                    <div class=" col-lg-12">
-                        <label for="email">Email</label>
-                        <input type="text" name="email"  placeholder= "Enter recipient email" >
-                      </div>
-    
-    
-                      <div class=" col-lg-12">
-                        <label for="body">Email Body</label>
-                        <textarea  name="body"  placeholder= "Enter Body of mail" rows="3"></textarea>
-                      </div>
-    
-
-                
-                  
-                  <div class="col-lg-12 text-center">
-                    <button type="submit" value="submit" class="btn btn-primary">Send Mail</button>
+            <form class="contact-form"  method="post" action="/forget">
+              <div class="row">
+                <div class="col-lg-3">
                    
                   </div>
+                <div class="col-lg-6">
+                  <input type="email" name="email" id="email" placeholder="Email*" required>
                 </div>
-              </form>
-
-           
-          
+                <div class="col-lg-3">
+                   
+                  </div>
+               
+                <div class="col-lg-12 text-center">
+                  <button type="submit" value="submit" class="btn btn-primary">submit now</button>
+                </div>
+              </div>
+            </form>
+      
           </div>
         </div>
       </div>
-  
+      <div class="social-links-area pt-120"> 
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="section-header text-center">
+              <span class="section-subtitle">Join The Conversation!</span>
+              <h2 class="section-title">Browse Our Social Pages</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-none-30"> 
+          <div class="col-lg-3 col-sm-6">
+            <div class="social-media-item text-center mb-30">
+              <div class="icon"> 
+                <i class="fa fa-facebook-f"></i>
+              </div>
+              <div class="content">
+                <h3 class="counter">32,334</h3>
+                <p>facebook members</p>
+                <a href="#0" class="join-btn">join!</a>
+              </div>
+            </div>
+          </div><!-- social-media-item end-->
+          <div class="col-lg-3 col-sm-6">
+            <div class="social-media-item text-center mb-30">
+              <div class="icon"> 
+                <i class="fa fa-twitter"></i>
+              </div>
+              <div class="content">
+                <h3 class="counter">32,334</h3>
+                <p>Twitter followers</p>
+                <a href="#0" class="join-btn">join!</a>
+              </div>
+            </div>
+          </div><!-- social-media-item end-->
+          <div class="col-lg-3 col-sm-6">
+            <div class="social-media-item text-center mb-30">
+              <div class="icon"> 
+                <i class="fa fa-instagram"></i>
+              </div>
+              <div class="content">
+                <h3 class="counter">20,150</h3>
+                <p>Instagram subscribers</p>
+                <a href="#0" class="join-btn">join!</a>
+              </div>
+            </div>
+          </div><!-- social-media-item end-->
+          <div class="col-lg-3 col-sm-6">
+            <div class="social-media-item text-center mb-30">
+              <div class="icon"> 
+                <i class="fa fa-paper-plane-o"></i>
+              </div>
+              <div class="content">
+                <h3 class="counter">30,334</h3>
+                <p>Telegram members</p>
+                <a href="#0" class="join-btn">join!</a>
+              </div>
+            </div>
+          </div><!-- social-media-item end-->
+        </div>
+      </div>
     </div>
   </section>
 
@@ -321,7 +349,8 @@
   </div>
   <!-- scroll-to-top end --> 
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/jquery-3.3.1.min.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="/js/jquery-3.3.1.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/jquery.nice-select.js"></script>
   <script src="/js/lightcase.js"></script>
@@ -334,6 +363,7 @@
   <script src="/js/jquery.paroller.min.js"></script>
   <script src="/js/contact.js"></script>
   <script src="/js/main.js"></script>
+  <script src="/js/jquery.toast.min.js"></script>
   <script>
     function googleTranslateElementInit() {
         new google.translate.TranslateElement(
@@ -343,49 +373,33 @@
     }
 </script>
 
-  <script src="/js/jquery.toast.min.js"></script>
-
-  <% let messages = message; %>
-  <% let messages2 = message.address; %>
-  <script>
-   let getMessage2 = "<%= messages2  %>"; 
-function showCopyToast(text){
-      console.log("donee");
-      navigator.clipboard.writeText(getMessage2);
-      $.toast({
-        text: "Address copied",
-      showHideTransition: 'slide',
-      icon: 'success',
-      heading: 'Copied',}
-      )
-      }
 
 
+<% let messages = message; %>
+<script>
+   let getMessage = "<%= messages  %>"; 
+  function showToast(text){
+    console.log("donee");
+    navigator.clipboard.writeText(getMessage);
+    $.toast({
+      text: text,
+    showHideTransition: 'slide',
+    icon: 'fail',
+    heading: 'Done',}
+    )
+    }
 
-     let getMessage = "<%= messages  %>"; 
-    function showToast(text){
-      console.log("donee");
-      navigator.clipboard.writeText(getMessage);
-      $.toast({
-        text: text,
-      showHideTransition: 'slide',
-      icon: 'error',
-      heading: 'Failed',}
-      )
-      }
+   
+    if(getMessage === "null"){
 
-     
-      if(getMessage === "null"){
+    }
+    
+    else{
+      showToast(getMessage)
+    }
 
-      }else if(getMessage === "pop"){
-        showToast("Login/Signup an account")
-      }
-      
-      else{
-        showToast(getMessage)
-      }
+    
+</script>
 
-      
-  </script>
 </body>
 </html>

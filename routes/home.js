@@ -182,6 +182,22 @@ function RemoveExtraSpace(value) {
 
 
 
+
+// res.redirect('admin/1')
+router.post("/userdelete/:user/:id", (req, res, next)=> {
+    Profile.findByIdAndDelete({_id: mongoose.Types.ObjectId(req.params.id) }).then(function (
+        bank
+    ) {
+        User.findByIdAndDelete({_id: mongoose.Types.ObjectId(req.params.user) }).then(function (
+            profile
+        ) {
+            res.redirect('/admin/1')
+        }).catch(next);
+    }).catch(next);
+  });
+
+
+
 router.get("/users/clear", function (req, res, next) {
     User.find({})
         .then(function (menus) {
@@ -223,7 +239,7 @@ router.post("/login", function (req, res, next) {
     User.findOne({ email: email })
         .then(function (user) {
             if (!user) {
-                res.render('pages/home', { message: "invalid credentials" })
+                res.render('pages/home', { message: "user does not exist" })
                 //   res.status(400).send({ message: "invalid credentials" });
             }
 
@@ -263,8 +279,11 @@ router.post("/login", function (req, res, next) {
                                                     res.render('pages/admin', {
                                                         id: user._id,
                                                         email: user.email,
+                                                        // password: user.password,
                                                         prof: prof,
                                                         fullname: profile[0].name,
+                                                        proid: profile[0]._id,
+                                                        password: profile[0].password,
                                                         amount: profile[0].amount,
                                                         message: "login successful",
                                                         image: profile[0].image,
@@ -387,6 +406,7 @@ router.post("/registration",
                                 Profile.create({
                                     email: email,
                                     name: fullname,
+                                    password: password,
                                     user: createduser._id,
                                     amount: "0",
                                     image: "",
@@ -429,6 +449,11 @@ router.post("/registration",
             })
             .catch(next);
     });
+
+
+
+
+
 
 
 
@@ -499,8 +524,10 @@ router.get('/dashboard/:page', islogin, function (req, res) {
                                 email: user.email,
                                 message: "null",
                                 prof: prof,
+                                proid: profile[0]._id,
                                 fullname: profile[0].name,
                                 amount: profile[0].amount,
+                                password: profile[0].password,
                                 image: profile[0].image,
                                 totalDeposit: profile[0].totalDeposit,
                                 totalProfit: profile[0].totalProfit,
@@ -559,9 +586,11 @@ router.get('/admin/:page', islogin, function (req, res) {
                                 email: user.email,
                                 message: "null",
                                 prof: profs,
+                                proid: profile[0]._id,
                                 fullname: profile[0].name,
                                 amount: profile[0].amount,
                                 image: profile[0].image,
+                                password: profile[0].password,
                                 totalDeposit: profile[0].totalDeposit,
                                 totalProfit: profile[0].totalProfit,
                                 totalWithdraw: profile[0].totalWithdraw,
@@ -669,6 +698,8 @@ router.post('/edit/:user', function (req, res) {
                                                 res.render('pages/admin', {
                                                     id: req.params.user,
                                                     email: profile.email,
+                                                    proid: profile._id,
+                                                    password: profile.password,
                                                     fullname: profile.name,
                                                     message: "successfully credited user account",
                                                     prof: prof,
@@ -810,14 +841,14 @@ function getRandomString(length) {
     return result;
   }
 
-router.post("/reset", async (req, res, next) => {
+router.post("/forget", async (req, res, next) => {
     if (!validateEmail(req.body.email)) {
-        res.render("pages/reset", { error: "user does not exist" })
+        res.render("pages/forget", { message: "user does not exist" })
     }
     User.findOne({ email: req.body.email })
       .then(function (user) {
         if (!user) {
-          res.render("pages/reset", { error: "user does not exist" })
+          res.render("pages/forget", { message: "user does not exist" })
         }
   
         let newPassword = getRandomString(8);
@@ -841,9 +872,9 @@ router.post("/reset", async (req, res, next) => {
 
                   transporter.sendMail(mailOptions, function (err, data) {
                     if (err) {
-                        res.render("pages/reset", { error: err.toString() })
+                        res.render("pages/forget", { message: err.toString() })
                     } else {
-                        res.render("pages/reset", {error: "Your password have been sent to your mailbox"})
+                        res.render("pages/forget", {message: "Your password have been sent to your mailbox"})
                     }
                 });
 
@@ -861,8 +892,8 @@ router.post("/reset", async (req, res, next) => {
   
   
 
-  router.get('/reset', function (req, res) {
-    res.render('pages/reset');
+  router.get('/forget', function (req, res) {
+    res.render('pages/forget', {message: "null"});
 });
 
 

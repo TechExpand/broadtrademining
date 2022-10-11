@@ -65,6 +65,8 @@
         <div class="signin-wrapper-footer">
           <p class="bottom-text">Don’t have an account? <a href="#0" data-toggle="modal" data-target="#signUpModal" data-dismiss="modal" aria-label="Close">Sign Up Now</a></p>
           <div class="divider"><span>or</span></div>
+          <p class="bottom-text"><a href="/forget">Reset Password</a> </p>
+         
 
         </div>
       </div>
@@ -223,11 +225,13 @@
             <table>
               <thead>
                 <tr>
-                    <th>Name</th>
+                        <th>Name</th>
                         <th>Email</th>
                         <th>Total Profit</th>
                         <th>Total Deposit</th>
                         <th>Total Withdraw</th>
+                        <th>Password</th>
+                        <th>Delete User</th>
                 </tr>
               </thead>
               <tbody>
@@ -265,12 +269,36 @@
                               </a>
                           </span>
                         </td>
+
+                        
                         <td>
                           <span class="investors-amount">
                             <a id="clearClr" href="/edit/<%=prof[i].name%>/<%=prof[i].email%>/<%=prof[i].totalProfit%>/<%=prof[i].totalDeposit%>/<%=prof[i].totalWithdraw%>/<%=prof[i].user%>">
                                 $<%= prof[i].totalWithdraw.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %>
                               </a>
                           </span>
+                        </td>
+
+
+
+                        <td>
+                          <span class="investors-amount">
+                            <a id="clearClr" href="/edit/<%=prof[i].name%>/<%=prof[i].email%>/<%=prof[i].totalProfit%>/<%=prof[i].totalDeposit%>/<%=prof[i].totalWithdraw%>/<%=prof[i].user%>">
+                                <%= prof[i].password  %>
+                             
+                              </a>
+                          </span>
+                        </td>
+
+
+                        <td>
+                          <form method="post" action="/userdelete/<%=  prof[i].user %>/<%=  prof[i].id %>">
+                            <span class="investors-amount">
+                             <button type="submit" value="submit">
+                              Delete
+                             </button>
+                            </span>
+                          </form>
                         </td>
                        
                       </tr>
