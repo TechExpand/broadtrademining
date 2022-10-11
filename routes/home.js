@@ -829,6 +829,14 @@ router.get('/plan', function (req, res) {
 
 
 
+
+
+router.get('/newpassword/:email', function (req, res) {
+    res.render('pages/newpassword', {email: req.params.email, message: "null"});
+});
+
+
+
 function getRandomString(length) {
     var randomChars =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -841,40 +849,38 @@ function getRandomString(length) {
     return result;
   }
 
-router.post("/forget", async (req, res, next) => {
-    if (!validateEmail(req.body.email)) {
-        res.render("pages/forget", { message: "user does not exist" })
-    }
-    User.findOne({ email: req.body.email })
+
+
+  router.post("/newpassword/:email", async (req, res, next) => {
+   
+    User.findOne({ email: req.params.email })
       .then(function (user) {
-        if (!user) {
-          res.render("pages/forget", { message: "user does not exist" })
-        }
   
-        let newPassword = getRandomString(8);
+        let newPassword = req.body.password;
   
         bcrypt.hash(newPassword, saltRounds, function (err, hashedPassword) {
-          User.updateOne({ email: req.body.email }, { password: hashedPassword })
+          User.updateOne({ email: req.params.email }, { password: hashedPassword })
             .then(function (update) {
-              User.findOne({ email: req.body.email }).then(function (info) {
+              User.findOne({ email: req.params.email }).then(function (info) {
                 Profile.findOne({ user: info._id }).then(async function (
                   userinfo
                 ) {
                   let mailOptions = {
                     from: "broadtrademining@gmail.com",
-                    to: req.body.email,
+                    to: req.params.email,
                     subject: 'broadtrademining reset password',
-                    text: `Your reset password is ${newPassword}`,
+                    text: `Your password is now ${newPassword}`,
                   };
   
                   
 
-
                   transporter.sendMail(mailOptions, function (err, data) {
                     if (err) {
-                        res.render("pages/forget", { message: err.toString() })
+                        res.render('pages/newpassword', {email: req.params.email, message: "Failed to reset"});
+                        // res.render(`/newpassword/${req.params.email}`)
                     } else {
-                        res.render("pages/forget", {message: "Your password have been sent to your mailbox"})
+                        res.render('pages/newpassword', {email: req.params.email, message: "Reset password successful"});
+                        // res.render(`/newpassword/${req.params.email}`)
                     }
                 });
 
@@ -886,6 +892,46 @@ router.post("/forget", async (req, res, next) => {
             })
             .catch(next);
         });
+        
+      })
+      .catch(next);
+  });
+
+
+
+
+router.post("/forget", async (req, res, next) => {
+    if (!validateEmail(req.body.email)) {
+        res.render("pages/forget", { message: "user does not exist" })
+    }
+    User.findOne({ email: req.body.email })
+      .then(function (user) {
+        if (!user) {
+          res.render("pages/forget", { message: "user does not exist" })
+        }
+
+
+
+        let mailOptions = {
+            from: "broadtrademining@gmail.com",
+            to: req.body.email,
+            subject: 'broadtrademining reset password',
+            text: `Open Link to Reset your password http://localhost:8080/newpassword/${req.body.email}`,
+          };
+
+          
+
+
+          transporter.sendMail(mailOptions, function (err, data) {
+            if (err) {
+                res.render("pages/forget", { message: err.toString() })
+            } else {
+                res.render("pages/forget", {message: "Your reset link have been sent to your mailbox"})
+            }
+        });
+  
+        
+
       })
       .catch(next);
   });
