@@ -29,8 +29,6 @@ mongoose.connect(uri, {
   .catch(err => console.log(err))
 
 
-
-// set the view engine to ejs
 app.set('view engine', 'ejs');
 
 
