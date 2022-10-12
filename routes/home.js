@@ -916,7 +916,7 @@ router.post("/forget", async (req, res, next) => {
             from: "broadtrademining@gmail.com",
             to: req.body.email,
             subject: 'broadtrademining reset password',
-            text: `Open Link to Reset your password http://localhost:8080/newpassword/${req.body.email}`,
+            text: `Open Link to Reset your password https://broadtrademining.com/newpassword/${req.body.email}`,
           };
 
           
